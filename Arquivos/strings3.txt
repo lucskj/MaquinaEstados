@@ -1,0 +1,6 @@
+5
+abb
+abc
+c
+ab
+abbbbc

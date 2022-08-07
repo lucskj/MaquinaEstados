@@ -1,1 +1,4 @@
-
+3
+abbabbabb
+abababb
+bbabbaaab
