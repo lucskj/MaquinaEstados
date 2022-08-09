@@ -23,7 +23,7 @@ linha de saída por string de entrada. No caso do exemplo, teremos 3 linhas de s
 
 # Definição de uma função para lidar com a validação das palavras.
 def check_string(palavra):
-  resultado = False                   # Inicializando uma variável de retorno.
+  resultado = True                   # Inicializando uma variável de retorno.
   palavra_min = palavra.lower()       # Deixando a palavra em minúsculo para facilitar a validação.
   letras_possiveis = ['a', 'b', 'c']  # Lista com os caracteres possíveis, de acordo com o alfabeto proposto.
   tamanho_palavra = len(palavra)      # Variável para armazenar o tamanho da palavra.
