@@ -24,13 +24,12 @@ linha de saída por string de entrada. No caso do exemplo, teremos 3 linhas de s
 # Definição de uma função para lidar com a validação das palavras.
 def check_string(palavra):
   resultado = True                   # Inicializando uma variável de retorno.
-  palavra_min = palavra.lower()       # Deixando a palavra em minúsculo para facilitar a validação.
   letras_possiveis = ['a', 'b', 'c']  # Lista com os caracteres possíveis, de acordo com o alfabeto proposto.
   tamanho_palavra = len(palavra)      # Variável para armazenar o tamanho da palavra.
 
   # Loop para checar cada letra dentro da palavra em questão.
   for i in range(0, tamanho_palavra):
-    letra = palavra_min[i]
+    letra = palavra[i]
 
     # Caso seja um caracter inválido, retornará falso.
     if letra not in letras_possiveis:
@@ -41,7 +40,7 @@ def check_string(palavra):
       if i == tamanho_palavra-1 or i == tamanho_palavra-2:
         return False
       # Caso contrário, checaremos os dois caracteres posteriores.
-      if palavra_min[i+1] == 'b' and palavra_min[i+2] == 'b':
+      if palavra[i+1] == 'b' and palavra[i+2] == 'b':
         resultado = True
       else:
         return False
